@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <form method="get" target="_blank">
+      <!-- <form method="post" target="_blank"> -->
+      <fieldset>
+        <legend>Contact Us</legend>
+        <label for="UserName">name : </label>
+        <input type="text" name="UserName" id="UserName" />
+        <br />
+
+        <span>Select your work: </span>
+        <label for="UserWork">Study</label>
+        <input type="radio" name="UserWork" value="Study" />
+
+        <label for="UserWork">SE</label>
+        <input type="radio" name="UserWork" value="SE" />
+
+        <label for="UserWork">Both</label>
+        <input type="radio" name="UserWork" value="Study/SE" />
+        <br />
+
+        <label for="Email">E-mail :</label>
+        <input type="email" name="Email" id="Email" />
+        <br />
+
+        <label for="PhoneNumber">Phone Number:</label>
+        <input type="text" placeholder="AreaCode" />
+        <input
+          type="numeric"
+          id="PhoneNumber"
+          name="PhoneNumber"
+          placeholder="Mob. number"
+        />
+        <br />
+
+        <label for="UserMessage">Message :</label>
+        <textarea name="UserMessage" id="Message" cols="30" rows="5"></textarea>
+        <br />
+
+        <input type="submit" value="Submit this message" />
+      </fieldset>
+    </form>
+  </body>
+</html>
