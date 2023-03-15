@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <!-- ========================================================
+          Form-> the form tag is used to create form formates on the website. This form is used basically for the registration process, logging into your profile on a website  etc …
+         ========================================================-->
+    <form>
+      <!-- ==================================================================
+             fieldset->The fieldset tag in HTML5 is used to make a group of related 
+             elements in the form, and it creates the box over the elements.
+            =================================================================-->
+      <fieldset>
+        <!-- ==================================================================
+               legend->The legend tag is used to define the title for the child contents/fieldset. The legend elements are the parent element.
+              =================================================================-->
+        <legend>Contact Us</legend>
+        <!-- ==================================================================
+               label->The label tag in HTML is used to provide a usability improvement for mouse users
+               label tag for attributes-> it is linked form input tag id attributes
+              =================================================================-->
+        <label for="UserName">name : </label>
+        <!-- ==================================================================
+               input tag, name attributes-> name attributes value is stores server side to the corresponding input value.
+               input tag, type attribute-> it is specifies whose types of input value do you want to enter.
+               input tag, placeholder attribute-> its put placeholder value to the corresponding input area/box.
+              =================================================================-->
+        <input type="text" name="UserName" id="UserName" />
+        <br />
+
+        <label for="JobTitle">Job Title :</label>
+        <input type="text" name="JobTitle" id="JobTitle" />
+        <br />
+
+        <label for="Restaurant">Restaurant:</label>
+        <input type="text" name="Restaurant" id="Restaurant" />
+        <br />
+
+        <label for="Email">E-mail :</label>
+        <input type="email" name="Email" id="Email" />
+        <br />
+
+        <label for="PhoneNumber">Phone Number:</label>
+        <input type="text" placeholder="AreaCode" />
+        <input
+          type="numeric"
+          id="PhoneNumber"
+          name="PhoneNumber"
+          placeholder="Mob. number"
+        />
+        <br />
+
+        <label for="UserMessage">Message :</label>
+        <textarea name="UserMessage" id="Message" cols="30" rows="5"></textarea>
+        <br />
+
+        <input type="submit" value="Submit this message" />
+      </fieldset>
+    </form>
+  </body>
+</html>
