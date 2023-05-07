@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Slider</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .slider-container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slider img {
+        width: 100%;
+        height: auto;
+      }
+
+      .prev-button,
+      .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+      }
+
+      .prev-button {
+        left: 0;
+      }
+
+      .next-button {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider">
+        <img
+          src="./Assets/1.png"
+          alt="Image 1" />
+        <img
+          src="./Assets/2.png"
+          alt="Image 2" />
+        <img
+          src="./Assets/3.png"
+          alt="Image 3" />
+        <img
+          src="./Assets/4.png"
+          alt="Image 4" />
+      </div>
+      <div class="prev-button">&lt;</div>
+      <div class="next-button">&gt;</div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".slider");
+        const prevButton = document.querySelector(".prev-button");
+        const nextButton = document.querySelector(".next-button");
+
+        let translateX = 0;
+
+        prevButton.addEventListener("click", function () {
+          if (translateX === 0) {
+            translateX = -100 * (slider.children.length - 1);
+          } else {
+            translateX += 100;
+          }
+          slider.style.transform = `translateX(${translateX}%)`;
+        });
+
+        nextButton.addEventListener("click", function () {
+          if (translateX === -100 * (slider.children.length - 1)) {
+            translateX = 0;
+          } else {
+            translateX -= 100;
+          }
+          slider.style.transform = `translateX(${translateX}%)`;
+        });
+      });
+    </script>
+  </body>
+</html>

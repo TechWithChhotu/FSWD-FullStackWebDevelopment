@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --HTMLColor: #bfefd1;
+  --CSSColor: #00ff80;
+  /* --JSColor: #17a7d6; */
+  --JSColor: #0089b7;
+  --CColor: #cdb1f0;
+  --CPPColor: #ffc0cb;
+  --JavaColor: #90d665;
+}
+body {
+  /* font-family: "Kanit", sans-serif; */
+  /* font-family: "Nunito", sans-serif; */
+  /* font-family: "Tangerine", cursive; */
+  font-family: "Varela Round", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #282a35;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.Heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  height: 9vh;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 9vh;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Heading nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  color: black;
+}
+.Heading nav a {
+  color: #000000;
+  border-radius: 10px;
+  width: 15%;
+  height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+}
+
+.Heading nav a:hover {
+  box-shadow: 2px 2px 2px rgb(96, 91, 91);
+}
+.Heading nav #C {
+  background-color: #9763f6;
+}
+.Heading nav #CPP {
+  background-color: #ffc0c7;
+}
+.Heading nav #Java {
+  background-color: #fff4a3;
+}
+.Heading nav #HTML {
+  background-color: #04aa6d;
+}
+
+#Home {
+  background-color: rgb(226, 43, 98);
+}
+.Heading nav #C:hover {
+  background-color: #7843da;
+}
+.Heading nav #CPP:hover {
+  background-color: #f8afb7;
+}
+.Heading nav #Java:hover {
+  background-color: #f9ec8c;
+}
+.Heading nav #HTML:hover {
+  background-color: #05bf7b;
+}
+
+/* ======================================== 
+            SVG designe Start
+   ========================================*/
+/* Hero section SVG designe */
+.custom-shape-divider-bottom-1681607718 {
+  position: absolute;
+  bottom: -59px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681607718 svg {
+  position: relative;
+  display: block;
+  width: calc(167% + 1.3px);
+  height: 110px;
+}
+
+.custom-shape-divider-bottom-1681607718 .shape-fill {
+  fill: #bfefd1;
+}
+/* Hero section SVG designe ended */
+
+.custom-shape-divider-bottom-1681607718-HTML,
+.custom-shape-divider-bottom-1681607718-CSS,
+.custom-shape-divider-bottom-1681607718-JS,
+.custom-shape-divider-bottom-1681607718-C,
+.custom-shape-divider-bottom-1681607718-Java,
+.custom-shape-divider-bottom-1681607718-CPP {
+  position: relative;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681607718-HTML svg,
+.custom-shape-divider-bottom-1681607718-CSS svg,
+.custom-shape-divider-bottom-1681607718-JS svg,
+.custom-shape-divider-bottom-1681607718-C svg,
+.custom-shape-divider-bottom-1681607718-Java svg,
+.custom-shape-divider-bottom-1681607718-CPP svg {
+  position: relative;
+  width: calc(167% + 1.3px);
+  height: 112px;
+}
+
+.custom-shape-divider-bottom-1681607718-HTML {
+  background-color: var(--HTMLColor);
+}
+.custom-shape-divider-bottom-1681607718-CSS {
+  background-color: var(--CSSColor);
+}
+.custom-shape-divider-bottom-1681607718-JS {
+  background-color: var(--JSColor);
+}
+.custom-shape-divider-bottom-1681607718-C {
+  background-color: var(--CColor);
+}
+.custom-shape-divider-bottom-1681607718-CPP {
+  background-color: var(--CPPColor);
+}
+.custom-shape-divider-bottom-1681607718-Java {
+  background-color: var(--JavaColor);
+}
+
+.custom-shape-divider-bottom-1681607718-HTML .shape-fill {
+  fill: var(--CSSColor);
+}
+
+.custom-shape-divider-bottom-1681607718-CSS .shape-fill {
+  fill: var(--JSColor);
+}
+
+.custom-shape-divider-bottom-1681607718-JS .shape-fill {
+  fill: var(--CColor);
+}
+
+.custom-shape-divider-bottom-1681607718-C .shape-fill {
+  fill: var(--CPPColor);
+}
+
+.custom-shape-divider-bottom-1681607718-CPP .shape-fill {
+  fill: var(--JavaColor);
+}
+.custom-shape-divider-bottom-1681607718-Java .shape-fill {
+  /* fill: var(--JavaColor); */
+  fill: #282a35;
+}
+/* ======================================== 
+            SVG designe ended
+   ========================================*/
+
+.HereSection {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.HomePage {
+  color: white;
+  text-align: center;
+  display: grid;
+
+  height: 30vh;
+}
+
+.HomePage h2 {
+  font-size: 60px;
+}
+
+.HomePage .SearchBar {
+  height: 40px;
+  width: 350px;
+  margin: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-image: linear-gradient(to left, white, #05bf76);
+}
+
+.HomePage .SearchBar input {
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  height: 40px;
+  width: 280px;
+  border-radius: 0 40% 0;
+}
+
+.HomePage .SearchBar .fa-solid {
+  border-radius: 0 20%;
+  background-color: #05bf76;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50% 0;
+}
+
+.HomePage input:focus {
+  outline: none;
+}
+
+.Subjects {
+  background-color: var(--HTMLColor);
+}
+
+.CSS {
+  background-color: var(--CSSColor);
+}
+.JavaScript {
+  background-color: var(--JSColor);
+}
+.C {
+  background-color: var(--CColor);
+}
+.CPP {
+  background-color: var(--CPPColor);
+}
+.Java {
+  background-color: var(--JavaColor);
+}
+
+.HTML,
+.CSS,
+.JavaScript,
+.C,
+.CPP,
+.Java {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.HTML .Left,
+.CSS .Left,
+.JavaScript .Left,
+.C .Left,
+.CPP .Left,
+.Java .Left {
+  text-align: center;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.HTML .Left button,
+.CSS .Left button,
+.JavaScript .Left button,
+.C .Left button,
+.CPP .Left button,
+.Java .Left button {
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 700;
+  border: 2px solid transparent;
+  color: white;
+}
+
+.HTML .Left button:hover,
+.CSS .Left button:hover,
+.JavaScript .Left button:hover,
+.C .Left button:hover,
+.CPP .Left button:hover,
+.Java .Left button:hover {
+  box-shadow: 2px 2px 4px black;
+}
+.HTML .Left #LearnHTML,
+.CSS .Left #LearnCSS,
+.JavaScript .Left #LearnJavaScript,
+.C .Left #LearnC,
+.CPP .Left #LearnCPP,
+.Java .Left #LearnJava {
+  background-color: #05bf7b;
+  border: 1px solid white;
+}
+.HTML .Left #VideoTutorials,
+.CSS .Left #VideoTutorials,
+.JavaScript .Left #VideoTutorials,
+.C .Left #VideoTutorials,
+.CPP .Left #VideoTutorials,
+.Java .Left #VideoTutorials {
+  background-color: #e34cca;
+  border: 1px solid white;
+}
+
+.HTML .Left #GetCertified,
+.CSS .Left #GetCertified,
+.JavaScript .Left #GetCertified,
+.C .Left #GetCertified,
+.CPP .Left #GetCertified,
+.Java .Left #GetCertified {
+  background-color: #992be2;
+  border: 1px solid white;
+}
+
+.HTML .Left h2,
+.CSS .Left h2,
+.JavaScript .Left h2,
+.C .Left h2,
+.CPP .Left h2,
+.Java .Left h2 {
+  font-size: 80px;
+}
+.HTML .Left p,
+.CSS .Left p,
+.JavaScript .Left p,
+.C .Left p,
+.CPP .Left p,
+.Java .Left p {
+  font-size: 20px;
+}
+.HTML .Right,
+.CSS .Right,
+.JavaScript .Right,
+.C .Right,
+.CPP .Right,
+.Java .Right {
+  background-color: #04182b;
+  height: 65vh;
+  padding: 5px 20px 0 20px;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
+  box-shadow: 2px 2px 2px #062543;
+}
+.HTML .Right img,
+.CSS .Right img,
+.JavaScript .Right img,
+.C .Right img,
+.CPP .Right img,
+.Java .Right img {
+  height: 55vh;
+  display: block;
+}
+
+.HTML .Right button,
+.CSS .Right button,
+.JavaScript .Right button,
+.C .Right button,
+.CPP .Right button,
+.Java .Right button {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #04aa6d;
+  border: none;
+  font-size: 20px;
+}
+
+.HTML .Right button:hover,
+.CSS .Right button:hover,
+.JavaScript .Right button:hover,
+.C .Right button:hover,
+.CPP .Right button:hover,
+.Java .Right button:hover {
+  background-color: #1effac;
+}
+
+.Footer {
+  height: 25vh;
+  background-color: #282a35;
+}
+
+.Footer .FooterNavigator {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.Footer .FooterNavigator .SocialMedia {
+  width: 210px;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+}
+
+.Footer .FooterNavigator .SocialMedia a i:hover {
+  color: #7843da;
+}
+
+.Footer .FooterNavigator a:hover {
+  color: #7843da;
+}
+.Footer .Description p {
+  text-align: center;
+  padding-bottom: 10px;
+}

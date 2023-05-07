@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  scroll-behavior: smooth;
+  background-color: gray;
+  scroll-behavior: smooth;
+}
+
+.Heading {
+  position: fixed;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.CTopic {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  position: fixed;
+  bottom: 0;
+
+  width: 18%;
+  background-color: #d9eee1;
+}
+
+.CLeftSideTopic {
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  height: 100%;
+  width: 100%;
+}
+
+.CLeftSideTopic a {
+  color: black;
+  padding: 10px 10px 0 10px;
+}
+.CRightSideContent {
+  width: 80%;
+  float: right;
+  background-color: gray;
+
+  padding-top: 50px;
+  line-height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Topic {
+  padding: 2px;
+}
+.Topic.active {
+  background-color: rgb(83, 230, 86);
+}
+
+.Topic.active a {
+  padding: 10px 10px 0 10px;
+}
